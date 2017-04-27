@@ -1,0 +1,96 @@
+.fundoVerdePastel{
+    background-color: #baffc9;
+
+}
+.fundoRosaPastel{
+    background-color: #ffb3ba;
+    color: #FFF;
+}
+
+.botaoCentro{
+    display: block;
+    margin: 0 auto;
+
+}
+.logo{
+    width: 100px;
+    padding-bottom: 0.01em;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+}
+.logo:hover{
+    opacity:0.6;
+
+}
+.fadeIn{
+    -webkit-animation: fade 2s ease-in; /* Safari 4.0 - 8.0 */
+    animation: fade 2s ease-in;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0;}
+    to {opacity:1;}
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity:1;}
+}
+.textoPropaganda{
+    color:white; 
+    width: 100%;
+    font-size: 20px;
+}
+#boxPrincipal{
+    min-width: 300px;
+    max-width: 380px;
+}
+
+footer{
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    margin-right: 5px;
+
+}
+@media screen and (max-width: 375px) {
+    .logo{
+        width: 70px;
+    }
+
+}
+
+.alinharSelect{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+label[for="file-upload"] {
+    padding: 0.5em;
+    text-align: center;
+    width: 45%;
+    display: inline-block;
+    background: #e91e63;
+    color: #fff;
+    cursor: pointer;
+}
+label[for="file-upload"]:hover {
+    background: #6b3880;
+}
+
+#filename {
+    padding: 0.5em;
+    float: left;
+    width:55%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    background:  #ffb3ba;
+}
+#file-upload {
+    position: absolute;
+    left: -9999px;
+}

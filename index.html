@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 
+    Site desenvolvido por BarbaRuiva Sistemas
+    sob demanda de TheWay e Roma Produções
+    @2017
+    -->
+    <title>Bon Appetit Nude Uploader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="./lib/solved.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="w3-display-container fundoVerdePastel" style="width: 100%; height: 100%">
+        <div class="w3-display-middle">
+            <img src="./thway.png" id="logo" class="logo fadeIn">
+            <div id="boxPrincipal" class="w3-container">
+                <div class="w3-card-18 w3-white">
+                    <div class="w3-container fundoRosaPastel">
+                        <h2>Nude-Uploader</h2>
+                    </div>
+                    <form id="formEnvio" class="w3-container" enctype="multipart/form-data" action="./nude.php" method="post">
+                        <div class="alinharSelect">
+                            <span id="filename">Selecione sua foto</span>
+                            <label for="file-upload">Selecionar<input type="file" name="arquivo" id="file-upload"></label>
+                        </div>
+
+                        <p>
+                            <input name="concorda" class="w3-check" required type="checkbox">
+                            <span>eu aceito os <a href="#" onclick="document.getElementById('modalTermos').style.display='block'">termos</a> para envio da imagem.</span>
+                        </p>
+                        <p>
+                            <input type="submit" class="w3-btn botaoCentro fundoRosaPastel" value="enviar" />
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="w3-display-bottomright" style="color: white;
+                                                       background-color: rgba(0,0,0,0.2);
+                                                       border-radius: 5px;
+                                                       padding: 0.2em;">
+            <i class="fa fa-fire" aria-hidden="true"></i> <span id="nrContador" style="font-weight: bold;">15</span> nudes enviados
+        </div>
+    </div>
+    <div id="modalTermos" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container fundoRosaPastel">
+                <span onclick="document.getElementById('modalTermos').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h2>Termos</h2>
+            </header>
+            <div class="w3-container">
+                <h4>
+                    AO CLICAR EM “eu aceito os termos para envio da imagem” FICO CIENTE, QUE: </h4>
+                <ol>
+                    <p>
+                        <li>
+                            Garante aos produtores da festa “Bon Appetit” uma perpétua, livre de royalties, sublicenciável e transferível licença para hospedar, armazenar, […] reproduzir, modificar, adaptar, […] publicar, […] promover, expor, imprimir e exibir publicamente aquele conteúdo em formato impresso ou em qualquer método (agora conhecido ou desenvolvido posteriormente).
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Nós usaremos essa licença para o propósito limitado de […] fazer um “mural de nudes” na festa BON APPETIT, realizada no dia 13 de maio de 2017, na boate THE WAY, em PELOTAS- RS; […]
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Embora não sejamos obrigados a fazê-lo, podemos acessar, revisar, exibir, editar e deletar seu conteúdo a qualquer momento e por qualquer motivo que acharmos assim necessário, incluindo se pensarmos que o seu conteúdo viola esses Termos, ou que de alguma forma a pessoa na foto seja identificada, através de cenários, tatuagens, marcas de nascença, etc... Você é o único responsável pelo conteúdo que você cria, publica, armazena ou envia pelo serviço.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Fica entendido que:<br/> 4.1 – Sou maior de 18 anos;<br/> 4.2 – A foto enviada é de minha autoria;<br/> 4.3 – Ao enviar a foto, o IP do dispositivo utilizado para enviá-la, fica GRAVADO, REGISTRADO seja para consulta ou utilização para identificação através de meios legais.<br/>
+                        </li>
+                    </p>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./lib/tw.js"></script>
+</body>
+
+</html>
