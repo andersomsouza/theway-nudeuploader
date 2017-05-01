@@ -59,6 +59,7 @@ function gravaDados($hashArquivo,$ext){
         $fp = fopen('./nudes/envios.csv', 'a');
     }   
     $ip = getenv('REMOTE_ADDR');
+    date_default_timezone_set('America/Sao_Paulo');
     $dataUpload = date("Y-m-d H:i:s");
     fwrite($fp,"$hashArquivo.$ext,$ip,$dataUpload\r\n");
     fclose($fp);
