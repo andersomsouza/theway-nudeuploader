@@ -1,2 +1,12 @@
 # theway-nudeuploader
-A image uploader developed for TheWay club
+A ajax image uploader developed for TheWay club
+
+### Libraries and Frameworks:
+  * JQuery
+  * W3.CSS 
+
+### Technologies:
+  * PHP
+  * Ajax
+  * Javascript
+     
